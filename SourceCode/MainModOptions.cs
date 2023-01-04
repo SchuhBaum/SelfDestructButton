@@ -42,7 +42,7 @@ namespace SelfDestructButton
 
             // Subtitle
             AddNewLine(0.5f);
-            AddTextLabel("Version " + MainMod.instance?.Version, FLabelAlignment.Left);
+            AddTextLabel("Version " + MainMod.instance?.Info.Metadata.Version, FLabelAlignment.Left);
             AddTextLabel("by SchuhBaum", FLabelAlignment.Right);
             DrawTextLabels(ref Tabs[0]);
 
@@ -51,7 +51,7 @@ namespace SelfDestructButton
             // Description
             AddBox();
             AddNewLine(2.5f); // add some space for word wrapping and new lines
-            AddTextLabel("Description:\n\nHold the '" + (inGameTranslator?.Translate("Pick up / Eat") ?? "Pick up / Eat") + "' button to self-destruct when being stun-grabbed by a creature.\n\nHelpful when using the 'JollyCoop Mod' where being stun-grabbed does not trigger the game-over screen. Can be combined with the 'Auto Destruction Mod' to create an explosion when self-destructing.", FLabelAlignment.Left);
+            AddTextLabel("Description:\n\nHold the '" + (inGameTranslator?.Translate("Pick up / Eat") ?? "Pick up / Eat") + "' button to self-destruct when being stun-grabbed by a creature.\n\nHelpful when using the 'JollyCoop' mod where being stun-grabbed does not trigger the game-over screen. Can be combined with the 'AutoDestruction' mod to create an explosion when self-destructing.", FLabelAlignment.Left);
 
             DrawTextLabels(ref Tabs[0]);
             AddNewLine(2.5f);

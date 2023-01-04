@@ -1,10 +1,10 @@
 ## SelfDestructButton
-###### Version: v0.33
+###### Version: v0.34
 This is a mod for Rain World v1.5.
 
 ### Description
-When grabbed by an enemy, the player can kill slugcat by holding the grab button. Lizards and Dropwigs try to grab the player whenever possible. Disables the emergency throw mechanic after being grabbed.
-Can be combined with "JollyCoop" such that the other players can try to help out. Can be combined with the "Auto Destruction Mod" to create an explosion.
+Hold the grab-button to self-destruct when being stun-grabbed by a creature. 
+Helpful when using the `JollyCoop` mod where being stun-grabbed does not trigger the game-over screen. Can be combined with the `AutoDestruction` mod to create an explosion when self-destructing.
 
 ### Dependencies
 - ConfigMachine.dll
@@ -32,9 +32,10 @@ v0.3:
 - Added an option (disabled by default) for a creature to insta-kill the player instead of trying to grab him when the creature is bleeding out (health < 0).
 - Changed the emergency throw option to be disabled by default.
 
-v0.33:
+v0.34:
 - Restructured code.
 - Added mod description in the mod config.
 - Added some debug logs.
 - Added an option for red lizards (enabled by default). When enabled, red lizards are always deadly even when the Lizard Bite option is enabled.
 - Changed the insta-kill option to be triggered when a creature's health is below 50%.
+- This mod is now a BepInEx plugin.
